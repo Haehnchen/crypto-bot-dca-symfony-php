@@ -1,0 +1,7 @@
+[
+  {
+    "exchange": "binance",
+    "apiKey": "FOOBAR_KEY",
+    "secret": "FOOBAR_SECRET"
+  }
+]

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e989fedaccbf1f52a48ed1d2401e6a4",
+    "content-hash": "75a9874b95698f52e5d0fc246c647761",
     "packages": [
         {
             "name": "ccxt/ccxt",
@@ -10157,7 +10157,8 @@
     "platform": {
         "php": ">=8.2",
         "ext-ctype": "*",
-        "ext-iconv": "*"
+        "ext-iconv": "*",
+        "ext-bcmath": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"

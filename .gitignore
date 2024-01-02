@@ -1,3 +1,5 @@
+./exchanges.json
+./idea
 
 ###> symfony/framework-bundle ###
 /.env.local
