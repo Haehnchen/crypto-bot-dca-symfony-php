@@ -22,7 +22,7 @@ class BuyMarketCommand extends Command
     {
         $this->addOption('exchange', null, InputOption::VALUE_REQUIRED, 'ccxt exchange name');
         $this->addOption('symbol', null, InputOption::VALUE_REQUIRED, 'BTC/USDT');
-        $this->addOption('currency', null, InputOption::VALUE_REQUIRED, 'Wse "10.15" to buy this amount of BTC');
+        $this->addOption('currency', null, InputOption::VALUE_REQUIRED, 'Use "10.15" to buy this amount of BTC');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
