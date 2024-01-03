@@ -15,7 +15,8 @@ readonly class MarketOrderCreator
 {
     public function __construct(
         private ApiKeyStorage $apiKeyStorage,
-        private LoggerInterface $logger
+        private LoggerInterface $logger,
+        private CcxtExchangeFactory $ccxtExchangeFactory
     ) {
     }
 
@@ -33,8 +34,7 @@ readonly class MarketOrderCreator
             throw new \InvalidArgumentException('class ccxt\\' . $exchange . ' not found');
         }
 
-        /** @var Exchange $ccxtExchange */
-        $ccxtExchange = new ('ccxt\\' . $exchange)([
+        $ccxtExchange = $this->ccxtExchangeFactory->createExchange($exchange, [
             'apiKey' => $config->apiKey,
             'secret' => $config->apiSecret,
         ]);
