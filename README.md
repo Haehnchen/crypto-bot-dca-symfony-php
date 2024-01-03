@@ -34,3 +34,10 @@ bin/console app:buy:market --exchange=binance --symbol=BTC/USDT --currency=15.23
 bin/console app:market:info --exchange=binance
 bin/console app:market:info --exchange=binance --filter=btc
 ```
+
+### Account Balance
+
+```bash
+bin/console app:account:balance --exchange=binance
+bin/console app:account:balance --exchange=binance --filter=usd
+```

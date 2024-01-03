@@ -30,10 +30,6 @@ readonly class MarketOrderCreator
 
         $config = $this->apiKeyStorage->getExchange($exchange);
 
-        if (!class_exists('ccxt\\' . $exchange)) {
-            throw new \InvalidArgumentException('class ccxt\\' . $exchange . ' not found');
-        }
-
         $ccxtExchange = $this->ccxtExchangeFactory->createExchange($exchange, [
             'apiKey' => $config->apiKey,
             'secret' => $config->apiSecret,
