@@ -3,7 +3,6 @@
 namespace App\Command;
 
 use App\Ccxt\BalanceFetcher;
-use App\Ccxt\CcxtUtil;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\Table;
